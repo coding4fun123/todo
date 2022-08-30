@@ -8,12 +8,8 @@
     "start": "node index.js",
     "server": "nodemon index.js",
     "client": "npm run start --prefix client",
-<<<<<<< HEAD
     "dev": "concurrently \"npm run server \" \"npm run client\"",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
-=======
-    "dev": "concurrently \"npm run server \" \"npm run client\""
->>>>>>> e720dd74ccc94041b7df17b374465065e405fab0
   },
   "repository": {
     "type": "git",
