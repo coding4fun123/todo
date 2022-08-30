@@ -8,6 +8,7 @@ require("./db")
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: true}));
 
+<<<<<<< HEAD
 app.use("/api/todo/", apiRoute)
 
 if (process.env.NODE_ENV === 'production') {
@@ -19,6 +20,13 @@ if (process.env.NODE_ENV === 'production') {
       res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
     });
 }
+=======
+// app.get(`/`, (req, res) => {
+//     res.send('hello')
+// })
+
+app.use("/api/todo/", apiRoute)
+>>>>>>> e720dd74ccc94041b7df17b374465065e405fab0
 
 app.listen(PORT, () => {
     console.log(`Listening on ${PORT}`)
